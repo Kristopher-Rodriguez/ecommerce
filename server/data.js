@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      _id: "1",
       name: "Nike Shirt",
       slug: "nike-shirt",
       category: "Shirts",
@@ -13,18 +14,20 @@ const data = {
       description: "High Quality Shirt",
     },
     {
+      _id: "2",
       name: "Adidas Shirt",
       slug: "adidas-shirt",
       category: "Shirts",
       image: "/images/p2.jpg",
       price: 75,
-      countInStock: 20,
+      countInStock: 0,
       brand: "Adidas",
       rating: 4.0,
       numReviews: 10,
       description: "High Quality Shirt",
     },
     {
+      _id: "3",
       name: "Puma Shirt",
       slug: "puma-shirt",
       category: "Shirts",
@@ -37,6 +40,7 @@ const data = {
       description: "High Quality Shirt",
     },
     {
+      _id: "4",
       name: "Nike Pants",
       slug: "nike-pants",
       category: "Pants",
@@ -49,6 +53,7 @@ const data = {
       description: "High Quality Pants",
     },
     {
+      _id: "5",
       name: "Adidas Pants",
       slug: "adidas-pants",
       category: "Pants",
