@@ -48,9 +48,9 @@ const HomeScreen = () => {
     <>
       <div>
         <Helmet>
-          <title>Record Collector</title>
+          <title>The Vinyl Vault</title>
         </Helmet>
-        <h1>Featured Products</h1>
+        <h1>New Arrivals</h1>
         <div className="products">
           {loading ? (
             <LoadingBox />

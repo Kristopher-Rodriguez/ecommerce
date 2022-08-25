@@ -81,7 +81,7 @@ function App() {
                 <i className="fas fa-bars"></i>
               </Button>
               <LinkContainer to="/">
-                <Navbar.Brand>Record Collector</Navbar.Brand>
+                <Navbar.Brand>The Vinyl Vault</Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -148,7 +148,7 @@ function App() {
         >
           <Nav className="flex-column text-white w-100 p-2">
             <Nav.Item>
-              <strong>Categories</strong>
+              <strong>Genres</strong>
             </Nav.Item>
             {categories.map((category) => (
               <Nav.Item key={category}>
