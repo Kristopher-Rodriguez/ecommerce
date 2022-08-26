@@ -33,6 +33,7 @@ import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
 import UserListScreen from "./screens/UserListScreen";
 import UserEditScreen from "./screens/UserEditScreen";
+import logo from "./assets/logo.png";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -81,7 +82,16 @@ function App() {
                 <i className="fas fa-bars"></i>
               </Button>
               <LinkContainer to="/">
-                <Navbar.Brand>The Vinyl Vault</Navbar.Brand>
+                <Navbar.Brand>
+                  <img
+                    alt=""
+                    src={logo}
+                    width="30"
+                    height="30"
+                    className="d-inline-block align-top"
+                  />{" "}
+                  The Vinyl Vault
+                </Navbar.Brand>
               </LinkContainer>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
