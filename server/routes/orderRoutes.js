@@ -32,6 +32,11 @@ orderRouter.post(
       user: req.user._id,
     });
     const order = await newOrder.save();
+    req.body.orderItems.map(async (item) => {
+      const product = await Product.findById(item._id);
+      product.countInStock -= item.quantity;
+      await product.save();
+    });
     res.status(201).send({ message: "New Order Created", order });
   })
 );
@@ -149,6 +154,7 @@ orderRouter.delete(
     if (order) {
       await order.remove();
       res.send({ message: "Order Deleted" });
+      console.log(order.orderItems);
     } else {
       res.status(404).send({ message: "Order Not Found" });
     }

@@ -180,6 +180,7 @@ export default function ProductListScreen() {
                   <td>{product.countInStock}</td>
                   <td>
                     <Button
+                      className="mb-1"
                       type="button"
                       variant="success"
                       onClick={() => navigate(`/admin/product/${product._id}`)}
@@ -188,6 +189,7 @@ export default function ProductListScreen() {
                     </Button>
                     &nbsp;
                     <Button
+                      className="mb-1"
                       type="button"
                       variant="danger"
                       onClick={() => deleteHandler(product)}

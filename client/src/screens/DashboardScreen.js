@@ -102,7 +102,7 @@ export default function DashboardScreen() {
           <div className="my-3">
             <h2>Sales</h2>
             {summary.dailyOrders.length === 0 ? (
-              <MessageBox>No Sale</MessageBox>
+              <MessageBox>No Sales</MessageBox>
             ) : (
               <Chart
                 width="100%"
